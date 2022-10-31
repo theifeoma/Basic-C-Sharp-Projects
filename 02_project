@@ -23,7 +23,7 @@ namespace Week5test
 
             if (isSuccessful)
             {
-                Console.WriteLine($"Success! Balance on {account1.GetNumber()}: account1.GetBalance()}");
+                Console.WriteLine($"Success! Balance on {account1.GetNumber()}: {account1.GetBalance()}");
             }
             else
             {
