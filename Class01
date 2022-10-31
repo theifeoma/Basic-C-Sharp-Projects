@@ -1,4 +1,9 @@
 // this is a class for the 01 project that deals with personal information
+//The class should has one constructor with three parameters, namely thename, the surname and the yearOfbirth. 
+//The address of the person is set initially to an emptystring "" inside the constructor; it can be set later on via invoking the SetAddress method.
+//Inside the Main entry-point of the project create two instances of the above class Person withsome relevant information for all the attributes. 
+//Print on the screen the information of those Person objects via invoking their Display method.
+
 
 using System;
 using System.Collections.Generic;
