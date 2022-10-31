@@ -1,0 +1,59 @@
+// this is a class for the 01 project that deals with personal information
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Week5test
+{
+    class Person
+    {
+        private string name;
+        private string surname;
+        private int yearOfBirth;
+        private string address;
+
+        public Person(string fname, string sfurname, int yob)
+        {
+            name = fname;
+            surname = sfurname;
+            yearOfBirth = yob;
+            address = "";
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public string GetSurname()
+        {
+            return surname;
+        }
+
+        public int GetYearOfBirth()
+        {
+            return yearOfBirth;
+        }
+
+        public void SetAddress(string addr)
+        {
+            address = addr;
+        }
+
+        public string GetAddress()
+        {
+            return address;
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Personal Information");
+            Console.WriteLine($"Name: {name} {surname}");
+            Console.WriteLine($"Year Of Birth: {yearOfBirth}");
+            Console.WriteLine($"Address: {address}");
+        }
+    }
+}
