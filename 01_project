@@ -26,6 +26,8 @@ namespace Week5test
             jason.Display();
             Console.WriteLine();
             sarah.Display();
+            jason.SetAddress("Admiralty Avenue");
+            sarah.SetAddress("Glover Court");
                 
         }
     }
