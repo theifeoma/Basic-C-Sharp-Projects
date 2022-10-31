@@ -1,0 +1,32 @@
+// this is a project that test the created class person. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Week5test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Random r = new Random();
+            //double number = r.NextDouble();
+            //int number = r.Next(1, 7);
+
+            //Console.WriteLine(number);
+
+            
+            Person jason = new Person ("Jason", "Samuels", 1888);
+            Person sarah = new Person("Sarah", "Samuels", 1889);
+
+            sarah.SetAddress("12 Violet Street");
+            jason.Display();
+            Console.WriteLine();
+            sarah.Display();
+                
+        }
+    }
+}
