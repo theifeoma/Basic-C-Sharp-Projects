@@ -51,6 +51,8 @@ namespace Week5test
             Console.WriteLine($"Account {highest.GetNumber()} has the highest balance:{ highest.GetBalance()}");
             // account1.balance = 400;
             
+            account2.Close();
+            Console.WriteLine($"Account 2 has been closed and now has a balance of " + account2.GetBalance());
         }
     }
 }
