@@ -1,0 +1,29 @@
+class Circle
+    {
+        private Point centre;
+        private int radius;
+
+
+        public Circle(Point c, int r)
+        {
+            centre = c;
+            radius = r;
+        }
+
+        public void Area()
+        {
+            Console.WriteLine(Math.PI * radius * radius);
+        }
+
+        public void Circumference()
+        {
+            Console.WriteLine(2 * Math.PI * radius);
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Point: ");
+            centre.Display();
+            Console.WriteLine($"Radius: {radius}");
+        }
+    }
