@@ -6,6 +6,60 @@ using System.Threading.Tasks;
 
 namespace Week5test
 {
+    class BankAccountt
+    {
+        private string number;
+        private double balance;
+
+        public BankAccountt(string numb, double bal)
+        {
+            number = numb;
+            balance = bal;
+        }
+
+        //constructor overload that takes in only one parameter while the other is always initialised to zero
+        public BankAccountt(string num)
+        {
+            number = num;
+            balance = 0;
+
+        }
+
+        public void Deposit(double amount)
+        {
+            balance += amount;
+        }
+
+        public bool Withdraw(double amount)
+        {
+            if (amount < balance)
+            {
+                balance -= amount;
+                return true;
+            }
+
+            return false;
+        }
+
+        public double GetBalance()
+        {
+            return balance;
+        }
+
+        public string GetNumber()
+        {
+            return number;
+        }
+
+        public void Close()
+        {
+            balance = 0;
+        }
+    }
+}
+
+namespace Week5test
+{
     class Program
     {
         static void Main(string[] args)
