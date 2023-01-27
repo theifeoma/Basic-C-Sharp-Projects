@@ -1,4 +1,28 @@
+class Point
+    {
+        private int x;
+        private int y;
+       
 
+
+        public Point(int xarg, int yarg)
+        {
+            x = xarg;
+            y = yarg;
+
+        }
+
+        public Point(int xarg)
+        {
+            x = xarg;
+            y = 0;
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"[{x}, {y}]");
+        }
+    }
    Class Program
    {
         static void Main(string[] args)
